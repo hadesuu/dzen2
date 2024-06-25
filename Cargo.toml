@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/dzen2_backend"
+]
+resolver = "2"

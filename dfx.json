@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "dzen2_backend": {
+      "candid": "src/dzen2_backend/dzen2_backend.did",
+      "package": "dzen2_backend",
+      "type": "rust"
+    },
+    "dzen2_frontend": {
+      "dependencies": [
+        "dzen2_backend"
+      ],
+      "source": [
+        "src/dzen2_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "dzen2_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

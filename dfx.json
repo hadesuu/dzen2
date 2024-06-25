@@ -1,19 +1,19 @@
 {
   "canisters": {
-    "dzen2_backend": {
-      "candid": "src/dzen2_backend/dzen2_backend.did",
-      "package": "dzen2_backend",
+    "dzien2_backend": {
+      "candid": "src/dzien2_backend/dzien2_backend.did",
+      "package": "dzien2_backend",
       "type": "rust"
     },
-    "dzen2_frontend": {
+    "dzien2_frontend": {
       "dependencies": [
-        "dzen2_backend"
+        "dzien2_backend"
       ],
       "source": [
-        "src/dzen2_frontend/dist"
+        "src/dzien2_frontend/dist"
       ],
       "type": "assets",
-      "workspace": "dzen2_frontend"
+      "workspace": "dzien2_frontend"
     }
   },
   "defaults": {

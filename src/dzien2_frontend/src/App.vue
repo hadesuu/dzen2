@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from 'vue';
-import { dzen2_backend } from 'declarations/dzen2_backend/index';
+import { dzien2_backend } from 'declarations/dzien2_backend/index';
+import Blog from './components/Blog.vue';
+
 let greeting = ref('');
 
 async function handleSubmit(e) {
@@ -8,7 +10,7 @@ async function handleSubmit(e) {
   const target = e.target;
   const name = target.querySelector('#name').value;
   const numer = target.querySelector('#numer').value;
-  await dzen2_backend.greet(name, Number(numer)).then((response) => {
+  await dzien2_backend.greet(name, Number(numer)).then((response) => {
     greeting.value = response;
   });
 }
@@ -26,5 +28,6 @@ async function handleSubmit(e) {
       <button type="submit">Click Me!</button>
     </form>
     <section id="greeting">{{ greeting }}</section>
+    <Blog />
   </main>
 </template>

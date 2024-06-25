@@ -1,5 +1,5 @@
 [workspace]
 members = [
-    "src/dzen2_backend"
+    "src/dzien2_backend"
 ]
 resolver = "2"
